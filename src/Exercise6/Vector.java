@@ -14,6 +14,7 @@ public abstract class Vector {
         this.z2 = z2;
     }
 
+    // Abstract methods.
     public abstract double getLength();
     public abstract String getVectorCords();
 }

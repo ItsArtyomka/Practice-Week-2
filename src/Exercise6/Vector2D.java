@@ -3,7 +3,7 @@ package Exercise6;
 public class Vector2D extends Vector {
     // 2D Vector Constructor
     public Vector2D(int x1, int y1, int x2, int y2) {
-        super(x1, y1, 0, x2, y2, 0);
+        super(x1, y1, 0, x2, y2, 0); // z1 and z2 = 0 because it is a 2D vector.
     }
 
     // Length of the vector = Magnitude of the vector aka ||a|| = sqrt((value of x)^2 + (value of y)^2)
@@ -14,7 +14,7 @@ public class Vector2D extends Vector {
     }
 
     // There are x/y 2 - x/y 1 because that's the convention of representing a vector as difference of two point,
-    // aka end point coords - start point coords.
+    // aka end point cords - start point cords.
     @Override
     public String getVectorCords() {
         return (x2 - x1) + " " + (y2 - y1);
@@ -27,8 +27,8 @@ public class Vector2D extends Vector {
         String cords2 = vector2D.getVectorCords(); // Vector b
 
         // Dot Product is vector a multiplied by vector b.
-        // split() function creates coords String array and split(" ") removes the space and just leaves the value,
-        // [0] gets the x value of coords and coords2.
+        // split() function creates cords String array and split(" ") removes the space and just leaves the value,
+        // [0] gets x value of cords and cords2, [1] gets the y value of cords and cords2
         // Integer.parseInt returns int value that was stored as an integer.
         return Integer.parseInt(cords.split(" ")[0]) * Integer.parseInt(cords2.split(" ")[0]) +
                 Integer.parseInt(cords.split(" ")[1]) * Integer.parseInt(cords2.split(" ")[1]);
