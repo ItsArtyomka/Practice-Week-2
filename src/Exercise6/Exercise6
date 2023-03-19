@@ -17,3 +17,7 @@ Write a Vector3D class that is a descendant of the Vector class. It should have:
 - getLength() method, which returns the length of the vector (double);
 - getVectorCords() method, which returns a string (vector coordinates with a space);
 - getScalarProduct(Vector3D vector) method (scalar product), which returns scalar product of vectors (real (double) number).
+
+Exercise Checker Output:
+Your solution was successfully submitted.
+You passed 100% of all tests.
